@@ -1,0 +1,224 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/************************************** HEADER ****************************************************/
+/* Navigation */
+header {
+  background-color: #057bff !important;
+}
+
+header .navbar {
+  background-color: #057bff !important;
+  --bs-bg-opacity: 1;
+}
+.navbar-toggler {
+  border: none;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+.navbar-toggler-icon {
+  border: none;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.logo {
+  width: 115px;
+}
+.searchbox {
+  width: 300px;
+}
+.mega-searchbox {
+  width: 739px !important;
+  height: 72px;
+}
+
+/* Navigation */
+header {
+  background: #057bff;
+}
+
+.header-title {
+  font-size: 60px;
+  line-height: 126%;
+}
+.header-title span {
+  display: block;
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.nav-custom-search-form {
+  width: 375px;
+  height: 56px;
+  margin: 0 auto;
+}
+.custom-search-form {
+  width: 732.25px;
+  height: 72px;
+  margin: 0 auto;
+}
+.custom-search-form .form-control {
+  height: 100%;
+  font-size: 1.2rem; /* optional for visual balance */
+}
+.custom-search-form .btn {
+  height: 100%;
+}
+
+.header-content {
+  background-image: url(../assets/txture.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header-content .container {
+  margin-top: 120px;
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px solid #2a8fff;
+}
+.circle-text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.nav-search-toggle {
+  display: none !important;
+}
+
+.nav-search-toggle.show {
+  display: flex !important;
+}
+.nav-search-toggle {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-search-toggle.show {
+  display: flex !important;
+  opacity: 1;
+}
+
+@media (max-width: 767.98px) {
+  .searchbox {
+    width: 135px !important;
+    height: 34px;
+  }
+  .mega-searchbox {
+    width: 224px !important;
+    height: 40px;
+  }
+  .logo {
+    width: 49px;
+  }
+  .header-title {
+    font-size: 34px;
+    line-height: 126%;
+  }
+  .header-title span {
+    font-size: 34px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: block !important;
+  }
+}
+
+/************************************** BEST DEALS ****************************************************/
+
+/************************************** PARTNERS ****************************************************/
+.partners img {
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/************************************** HEALTH & BEAUTY ****************************************************/
+
+.health-beauty .deal-card {
+  border: 1px solid #dedede;
+}
+
+/************************** CATEGORY ******************************* */
+.card {
+  height: 367px;
+}
+.card-img-top {
+  width: 100%;
+  height: 100%;
+}
+.card-overlay-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(#057bff, #004ca0);
+  background-image: url(../assets/oval_shap.png);
+  background-size: cover;
+  color: #fff;
+  padding: 5px 0;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card {
+  height: 198px; /* default for mobile */
+}
+
+@media (min-width: 768px) {
+  .card {
+    height: 367px; /* for md and above */
+  }
+  .card-overlay-btn {
+    padding: 20px 0;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-overlay-btn {
+    padding: 40px 0;
+    font-size: 18px;
+  }
+}
+
+/************************************** FOOTER ****************************************************/
+footer {
+  background: linear-gradient(#057bff, #004ca0);
+}
+footer .footer-logo {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -2%;
+  line-height: 110%;
+}
+footer .footer-text {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+footer h5 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+footer ul li {
+  font-size: 1.125rem;
+  font-weight: 400;
+}

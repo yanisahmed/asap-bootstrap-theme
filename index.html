@@ -10,16 +10,877 @@
       integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/swiper.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Your content will go here -->
+    <!-- Header Start -->
+    <header>
+      <!-- Navigation Section Start -->
+      <nav class="navbar navbar-expand-lg px-5 fixed-top">
+        <div
+          class="container-fluid d-flex align-items-center justify-content-between"
+        >
+          <!-- Logo -->
+          <a class="navbar-brand" href="#"
+            ><img class="logo" src="assets/logo.png" alt=""
+          /></a>
+
+          <!-- Center Search + Menu (desktop only) -->
+          <div class="d-none d-lg-flex align-items-center gap-3 mx-auto">
+            <form class="d-flex nav-search-toggle">
+              <div class="input-group">
+                <input
+                  type="search"
+                  class="form-control searchbox"
+                  placeholder="Search"
+                />
+                <button
+                  class="btn"
+                  style="background-color: #0093e4; color: white"
+                  type="submit"
+                >
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Shopping</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Money</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Travel</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile Search (mobile only) -->
+          <div class="d-flex d-lg-none mx-auto">
+            <form class="d-flex nav-search-toggle">
+              <div class="input-group">
+                <input
+                  type="search"
+                  class="form-control searchbox"
+                  placeholder="Search"
+                />
+                <button
+                  class="btn"
+                  style="background-color: #0093e4; color: white"
+                  type="submit"
+                >
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Hamburger Icon (always visible) -->
+          <button
+            class="navbar-toggler ms-2"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Offcanvas Menu -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Menu</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Navigation Section End -->
+
+      <section class="text-white header-content text-center py-5">
+        <div class="container">
+          <h1 class="mb-3 header-title">
+            <span>The lowest prices</span> on over 1M products
+          </h1>
+          <div class="d-flex justify-content-center align-items-center gap-3 my-3 mx-auto w-75">
+            <form class="d-flex">
+              <div class="input-group">
+                <input
+                  type="search"
+                  class="form-control mega-searchbox"
+                  placeholder="I am looking for...."
+                />
+                <button
+                  class="btn"
+                  style="background-color: #0093e4; color: white; padding: 6px 30px;"
+                  type="submit"
+                >
+                  <i class="bi bi-search fw-bold"></i>
+                </button>
+              </div>
+            </form>
+        </div>
+      </section>
+
+      <div class="container-fluid ps-5 py-2">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h5 class="text-white ">Trending Categories</h5>
+          </div>
+        </div>
+        <div class="row">
+        <div class="swiper mySwiper slider-1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="circle">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+              
+              </div>
+              <p class="circle-text text-white text-center mt-3">Tech</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="circle">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+              
+              </div>
+              <p class="circle-text text-white text-center mt-3">Tech</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="circle">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+              
+              </div>
+              <p class="circle-text text-white text-center mt-3">Tech</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="circle">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+              
+              </div>
+              <p class="circle-text text-white text-center mt-3">Tech</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="circle">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+              
+              </div>
+              <p class="circle-text text-white text-center mt-3">Tech</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="circle">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+              
+              </div>
+              <p class="circle-text text-white text-center mt-3">Tech</p>
+            </div>
+            <div class="swiper-slide">
+             <div class="circle">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+              
+              </div>
+              <p class="circle-text text-white text-center mt-3">Tech</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="circle">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+              
+              </div>
+              <p class="circle-text text-white text-center mt-3">Tech</p>
+            </div>
+            <div class="swiper-slide">
+              <div class="circle">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+              
+              </div>
+              <p class="circle-text text-white text-center mt-3">Tech</p>
+            </div>
+          </div>
+          <div class="swiper-button-next text-white">→</div>
+          <div class="swiper-button-prev text-white">←</div>
+        </div>
+      </div>
+      </div>
+
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Best Deals Start -->
+    <section
+      class="best-deals container-fluid py-5 ps-5"
+      style="background: #f5f8ff"
+    >
+      <h3 class="fw-bold mb-4">The Best Deals Today</h3>
+      <div class="row">
+        <div class="swiper mySwiper slider-2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white roundedr">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next text-white">→</div>
+          <div class="swiper-button-prev text-white">←</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners px-5" style="background: #f5f8ff">
+      <div class="row rounded" style="background-color: #ede7f6">
+        <div class="order-1 order-md-0 col-md-4 p-5">
+          <h3 class="mb-5">
+            <span class="fw-bold">Thousands of retailers</span> All under one
+            roof
+          </h3>
+          <a href="#" class="btn btn-outline-primary w-75 bg-white"
+            >View all retailer</a
+          >
+        </div>
+        <div class="order-0 order-md-1 col-md-8 p-0">
+          <img src="assets/partners.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="recently-views container-fluid py-5 ps-5"
+      style="background: #f5f8ff"
+    >
+      <h3 class="fw-bold mb-4">Recently Views</h3>
+      <div class="row">
+        <div class="swiper mySwiper slider-3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white roundedr">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next text-white">→</div>
+          <div class="swiper-button-prev text-white">←</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Health & Beauty Section-->
+    <section class="health-beauty container-fluid py-5 ps-5">
+      <h3 class="section-title mb-4">Health and Beauty</h3>
+      <div class="row">
+        <div class="swiper mySwiper slider-5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white roundedr">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="deal-card p-3 bg-white rounded">
+                <img
+                  src="assets/tech-image.png"
+                  alt="product"
+                  class="img-fluid mb-3"
+                />
+                <p class="fw-medium">
+                  Trovet Renal & Oxalate Diet (Rid) Canine – x...
+                </p>
+                <p class="mb-3">From <strong>£20.59</strong></p>
+                <a href="#" class="btn btn-primary w-100">Shop now</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next text-white">→</div>
+          <div class="swiper-button-prev text-white">←</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Section-->
+    <section class="category py-5 px-5" style="background-color: #f5f8ff">
+      <div class="container-fluid">
+        <h3 class="mb-4 section-title">Shop by category</h3>
+        <div class="row g-4">
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="card">
+              <img src="assets/home.png" class="card-img-top" alt="" />
+              <a href="#" class="card-overlay-btn">
+                <div class="d-flex justify-content-between px-4">
+                  <span>Home</span><i class="bi bi-chevron-right"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="card">
+              <img
+                src="assets/clothing-image.png"
+                class="card-img-top"
+                alt=""
+              />
+              <a href="#" class="card-overlay-btn">
+                <div class="d-flex justify-content-between px-4">
+                  <span>Clothing</span><i class="bi bi-chevron-right"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="card">
+              <img src="assets/fitness.png" class="card-img-top" alt="" />
+              <a href="#" class="card-overlay-btn">
+                <div class="d-flex justify-content-between px-4">
+                  <span>Fitness</span><i class="bi bi-chevron-right"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="card">
+              <img src="assets/technology.png" class="card-img-top" alt="" />
+              <a href="#" class="card-overlay-btn">
+                <div class="d-flex justify-content-between px-4">
+                  <span>Technology</span><i class="bi bi-chevron-right"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="card">
+              <img src="assets/home.png" class="card-img-top" alt="" />
+              <a href="#" class="card-overlay-btn">
+                <div class="d-flex justify-content-between px-4">
+                  <span>Home</span><i class="bi bi-chevron-right"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="card">
+              <img
+                src="assets/clothing-image.png"
+                class="card-img-top"
+                alt=""
+              />
+              <a href="#" class="card-overlay-btn">
+                <div class="d-flex justify-content-between px-4">
+                  <span>Clothing</span><i class="bi bi-chevron-right"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="card">
+              <img src="assets/fitness.png" class="card-img-top" alt="" />
+              <a href="#" class="card-overlay-btn">
+                <div class="d-flex justify-content-between px-4">
+                  <span>Fitness</span><i class="bi bi-chevron-right"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-4 col-md-3">
+            <div class="card">
+              <img src="assets/technology.png" class="card-img-top" alt="" />
+              <a href="#" class="card-overlay-btn">
+                <div class="d-flex justify-content-between px-4">
+                  <span>Technology</span><i class="bi bi-chevron-right"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-4" style="border-radius: 20px 20px 0 0">
+      <div class="container">
+        <div class="row">
+          <!-- Logo & Description -->
+          <div class="col-md-6 col-lg-6 mb-4">
+            <h3 class="footer-logo">ASAP.CO.UK</h3>
+            <p class="footer-text">
+              www.asap.co.uk is the world’s leading product discovery network,
+              covering a range of industries including beauty, electrical, home
+              and many more.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="d-none d-md-block col-md-3 col-lg-3 mb-4">
+            <h5 class="fw-bold mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">About</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Cookies</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-3 col-lg-3 mb-4">
+            <h5 class="fw-bold mb-3">Contact Us</h5>
+            <address>
+              Office 3,<br />
+              St Ann's House,<br />
+              111 Guildford Road,<br />
+              Surrey<br />
+              GU18 5RA
+            </address>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 d-md-none">
+            <ul class="d-flex justify-content-between list-unstyled mb-0">
+              <li>Home</li>
+              <li>About</li>
+              <li>Contact</li>
+              <li>Cookies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+    <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

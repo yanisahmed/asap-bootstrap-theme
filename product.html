@@ -33,6 +33,9 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       .spec-title {
         font-weight: 700;
         font-size: 1.75rem;
@@ -115,6 +118,30 @@
       .show-more-btn:hover {
         background: #007bff;
         color: #fff;
+      }
+
+      .sticky-subnav {
+        position: sticky;
+        top: 75px; /* equal to primary menu height */
+        z-index: 1020; /* higher than content but below primary nav if needed */
+        background: #fff;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .sticky-subnav .nav-link {
+        border-bottom: 3px solid transparent;
+        color: #212529;
+        font-weight: 500;
+        padding-bottom: 0.5rem;
+      }
+
+      .sticky-subnav .nav-link.active {
+        border-bottom: 3px solid #0d6efd;
+        color: #0d6efd;
+      }
+      .sticky-subnav .nav-link:hover {
+        border-bottom: 3px solid #0d6efd;
+        color: #0d6efd;
       }
     </style>
   </head>
@@ -258,8 +285,22 @@
       </div>
     </section>
 
+    <!-- Sticky Secondary Nav -->
+    <div class="sticky-subnav">
+      <div class="container">
+        <nav
+          class="nav nav-justified flex-nowrap overflow-auto gap-3 mb-0 py-2"
+        >
+          <a class="nav-link active" href="#offers">Offers</a>
+          <a class="nav-link" href="#section2">Price History</a>
+          <a class="nav-link" href="#fullDescription">Full Description</a>
+          <a class="nav-link" href="#productSpec">Product Spec</a>
+        </nav>
+      </div>
+    </div>
+
     <section class="" style="background: #f5f8ff">
-      <div class="container py-5">
+      <div class="container py-5" id="offers">
         <!-- Price List Item -->
         <div class="price-item">
           <div class="d-flex align-items-center gap-3">
@@ -402,7 +443,7 @@
         </div>
       </div>
 
-      <div class="container py-5">
+      <div class="container py-5" id="fullDescription">
         <div class="rounded-section">
           <h2 class="description-title mb-4">Description</h2>
 
@@ -443,7 +484,7 @@
         </div>
       </div>
 
-      <div class="container py-5">
+      <div class="container py-5" id="productSpec">
         <div class="rounded-section">
           <div class="row mb-4">
             <div class="col-12">

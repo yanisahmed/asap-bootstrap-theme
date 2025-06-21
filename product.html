@@ -30,120 +30,8 @@
     />
 
     <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/product.css" />
     <link rel="stylesheet" href="css/style.css" />
-
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-      .spec-title {
-        font-weight: 700;
-        font-size: 1.75rem;
-        color: #0a0a0a;
-      }
-      .spec-label {
-        font-weight: 600;
-        color: #0a0a0a;
-      }
-      .spec-value {
-        color: #b0b0b0;
-      }
-      .spec-row {
-        border-bottom: 1px solid #f0f0f0;
-        padding: 1rem 0;
-      }
-      .rounded-section {
-        border-radius: 1rem;
-        background: #fff;
-        padding: 2rem;
-      }
-
-      .description-title {
-        font-weight: 700;
-        font-size: 2rem;
-        color: #0a0a0a;
-      }
-      .description-text {
-        color: #6c757d;
-        font-size: 1rem;
-        line-height: 1.7;
-      }
-      .description-list {
-        color: #6c757d;
-        padding-left: 1.5rem;
-        margin-top: 1rem;
-      }
-
-      .price-item {
-        background: #fff;
-        border-radius: 0.75rem;
-        padding: 1rem 1.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 1rem;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-      }
-      .price-item img {
-        height: 32px;
-      }
-      .price-delivery {
-        color: #6c757d;
-        font-size: 0.95rem;
-      }
-      .price-old {
-        text-decoration: line-through;
-        color: #b0b0b0;
-        margin-right: 0.5rem;
-      }
-      .price-new {
-        font-weight: 700;
-        font-size: 1.1rem;
-        color: #0a0a0a;
-      }
-      .show-more-btn {
-        border: 1px solid #007bff;
-        border-radius: 0.5rem;
-        padding: 0.5rem 1.5rem;
-        color: #007bff;
-        background: #fff;
-        font-weight: 600;
-        display: block;
-        margin: 2rem auto 0;
-        text-align: center;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        display: inline-block;
-      }
-      .show-more-btn:hover {
-        background: #007bff;
-        color: #fff;
-      }
-
-      .sticky-subnav {
-        position: sticky;
-        top: 75px; /* equal to primary menu height */
-        z-index: 1020; /* higher than content but below primary nav if needed */
-        background: #fff;
-        border-bottom: 1px solid #e0e0e0;
-      }
-
-      .sticky-subnav .nav-link {
-        border-bottom: 3px solid transparent;
-        color: #212529;
-        font-weight: 500;
-        padding-bottom: 0.5rem;
-      }
-
-      .sticky-subnav .nav-link.active {
-        border-bottom: 3px solid #0d6efd;
-        color: #0d6efd;
-      }
-      .sticky-subnav .nav-link:hover {
-        border-bottom: 3px solid #0d6efd;
-        color: #0d6efd;
-      }
-    </style>
   </head>
   <body>
     <!-- Header Start -->
@@ -292,7 +180,7 @@
           class="nav nav-justified flex-nowrap overflow-auto gap-3 mb-0 py-2"
         >
           <a class="nav-link active" href="#offers">Offers</a>
-          <a class="nav-link" href="#section2">Price History</a>
+          <a class="nav-link" href="#priceHistory">Price History</a>
           <a class="nav-link" href="#fullDescription">Full Description</a>
           <a class="nav-link" href="#productSpec">Product Spec</a>
         </nav>
@@ -442,6 +330,15 @@
           <a href="#" class="show-more-btn text-center">Show more (32)</a>
         </div>
       </div>
+
+      <!-- Price History -->
+      <div class="container my-5" id="priceHistory">
+        <div class="card p-4">
+          <h2 class="mb-4">Price History</h2>
+          <canvas id="lineChart" height="300"></canvas>
+        </div>
+      </div>
+      <!-- Price History Ends -->
 
       <div class="container py-5" id="fullDescription">
         <div class="rounded-section">
@@ -747,9 +644,11 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+    <!-- Initialize Swiper -->
     <script src="js/swiper.js"></script>
+    <script src="js/chart.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

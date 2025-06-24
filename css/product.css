@@ -1,44 +1,38 @@
 html {
   scroll-behavior: smooth;
 }
-.spec-title {
-  font-weight: 700;
-  font-size: 1.75rem;
-  color: #0a0a0a;
-}
-.spec-label {
-  font-weight: 600;
-  color: #0a0a0a;
-}
-.spec-value {
-  color: #b0b0b0;
-}
-.spec-row {
-  border-bottom: 1px solid #f0f0f0;
-  padding: 1rem 0;
-}
 .rounded-section {
   border-radius: 1rem;
   background: #fff;
   padding: 2rem;
 }
 
-.description-title {
-  font-weight: 700;
-  font-size: 2rem;
-  color: #0a0a0a;
-}
-.description-text {
-  color: #6c757d;
-  font-size: 1rem;
-  line-height: 1.7;
-}
-.description-list {
-  color: #6c757d;
-  padding-left: 1.5rem;
-  margin-top: 1rem;
+/******************************* STICKY NAVBAR *********************************/
+
+.sticky-subnav {
+  position: sticky;
+  top: 75px; /* equal to primary menu height */
+  z-index: 1020; /* higher than content but below primary nav if needed */
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
 }
 
+.sticky-subnav .nav-link {
+  border-bottom: 3px solid transparent;
+  color: #212529;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+}
+
+.sticky-subnav .nav-link.active {
+  border-bottom: 3px solid #0d6efd;
+  color: #0d6efd;
+}
+.sticky-subnav .nav-link:hover {
+  border-bottom: 3px solid #0d6efd;
+  color: #0d6efd;
+}
+/******************************* OFFERS *********************************/
 .price-item {
   background: #fff;
   border-radius: 0.75rem;
@@ -85,26 +79,38 @@ html {
   color: #fff;
 }
 
-.sticky-subnav {
-  position: sticky;
-  top: 75px; /* equal to primary menu height */
-  z-index: 1020; /* higher than content but below primary nav if needed */
-  background: #fff;
-  border-bottom: 1px solid #e0e0e0;
+/******************************* DESCRIPTION *********************************/
+
+.description-title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #0a0a0a;
+}
+.description-text {
+  color: #6c757d;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.description-list {
+  color: #6c757d;
+  padding-left: 1.5rem;
+  margin-top: 1rem;
 }
 
-.sticky-subnav .nav-link {
-  border-bottom: 3px solid transparent;
-  color: #212529;
-  font-weight: 500;
-  padding-bottom: 0.5rem;
+/******************************* PRODUCT SPEC *********************************/
+.spec-title {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: #0a0a0a;
 }
-
-.sticky-subnav .nav-link.active {
-  border-bottom: 3px solid #0d6efd;
-  color: #0d6efd;
+.spec-label {
+  font-weight: 600;
+  color: #0a0a0a;
 }
-.sticky-subnav .nav-link:hover {
-  border-bottom: 3px solid #0d6efd;
-  color: #0d6efd;
+.spec-value {
+  color: #b0b0b0;
+}
+.spec-row {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 1rem 0;
 }

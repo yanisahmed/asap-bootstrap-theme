@@ -138,6 +138,14 @@ header .navbar {
   .header-title span {
     font-size: 34px;
   }
+
+  header .circle {
+    width: 70px;
+    height: 70px;
+  }
+  .circle-text {
+    font-size: 12px;
+  }
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-toggler {

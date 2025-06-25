@@ -89,6 +89,9 @@ html {
 
 #priceHistory {
   background: white;
+  border-radius: 1rem;
+  width: 95%;
+  min-height: 350px;
 }
 /******************************* DESCRIPTION *********************************/
 

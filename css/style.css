@@ -1,6 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
 .section-title {
   font-size: 1.5rem;
   font-weight: 700;
@@ -9,7 +10,6 @@ body {
 /************************************** HEADER ****************************************************/
 header {
   background: #057bff;
-  padding: 1.5rem;
 }
 
 /* Navigation */
@@ -35,7 +35,11 @@ header .navbar {
   width: 115px;
 }
 .searchbox {
-  width: 300px;
+  width: 524px;
+}
+.searchbox img {
+  width: 24px;
+  height: 24px;
 }
 
 .nav-search-toggle {
@@ -64,9 +68,7 @@ header .navbar {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-.header-content .container {
-  margin-top: 120px;
+  padding-top: 170px !important;
 }
 
 .header-title {
@@ -82,6 +84,10 @@ header .navbar {
   width: 739px !important;
   height: 72px;
 }
+.mega-searchbox img {
+  width: 34px;
+  height: 34px;
+}
 .circle {
   width: 140px;
   height: 140px;
@@ -95,15 +101,7 @@ header .navbar {
 
 /* Header Content End */
 
-@media (max-width: 767.98px) {
-  .searchbox {
-    width: 224px !important;
-    height: 34px;
-  }
-  .mega-searchbox {
-    width: 224px !important;
-    height: 40px;
-  }
+@media (max-width: 769px) {
   .logo {
     width: 49px;
     height: 20px;
@@ -112,6 +110,27 @@ header .navbar {
     width: 30px;
     height: 30px;
   }
+  .searchbox {
+    width: 224px !important;
+    height: 34px;
+  }
+  .searchbox img {
+    width: 20px;
+    height: 20px;
+  }
+  .header-title {
+    text-align: left;
+    font-size: 34px;
+  }
+  .mega-searchbox {
+    width: 342px !important;
+    height: 40px;
+  }
+  .mega-searchbox img {
+    width: 20px;
+    height: 20px;
+  }
+
   .header-title {
     font-size: 34px;
     line-height: 126%;

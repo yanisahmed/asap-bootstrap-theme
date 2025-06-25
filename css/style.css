@@ -7,10 +7,11 @@ body {
 }
 
 /************************************** HEADER ****************************************************/
-/* Navigation */
 header {
-  background-color: #057bff !important;
+  background: #057bff;
 }
+
+/* Navigation */
 
 header .navbar {
   background-color: #057bff !important;
@@ -35,64 +36,6 @@ header .navbar {
 .searchbox {
   width: 300px;
 }
-.mega-searchbox {
-  width: 739px !important;
-  height: 72px;
-}
-
-/* Navigation */
-header {
-  background: #057bff;
-}
-
-.header-title {
-  font-size: 60px;
-  line-height: 126%;
-}
-.header-title span {
-  display: block;
-  font-size: 80px;
-  font-weight: 800;
-}
-
-.nav-custom-search-form {
-  width: 375px;
-  height: 56px;
-  margin: 0 auto;
-}
-.custom-search-form {
-  width: 732.25px;
-  height: 72px;
-  margin: 0 auto;
-}
-.custom-search-form .form-control {
-  height: 100%;
-  font-size: 1.2rem; /* optional for visual balance */
-}
-.custom-search-form .btn {
-  height: 100%;
-}
-
-.header-content {
-  background-image: url(../assets/txture.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.header-content .container {
-  margin-top: 120px;
-}
-
-.circle {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  border: 1px solid #2a8fff;
-}
-.circle-text {
-  font-size: 22px;
-  font-weight: 600;
-}
 
 .nav-search-toggle {
   display: none !important;
@@ -110,6 +53,46 @@ header {
   display: flex !important;
   opacity: 1;
 }
+
+/* Navigation End */
+
+/* Header Content */
+
+.header-content {
+  background-image: url(../assets/txture.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header-content .container {
+  margin-top: 120px;
+}
+
+.header-title {
+  font-size: 60px;
+  line-height: 126%;
+}
+.header-title span {
+  display: block;
+  font-size: 80px;
+  font-weight: 800;
+}
+.mega-searchbox {
+  width: 739px !important;
+  height: 72px;
+}
+.circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1px solid #2a8fff;
+}
+.circle-text {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Header Content End */
 
 @media (max-width: 767.98px) {
   .searchbox {

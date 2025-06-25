@@ -340,10 +340,24 @@
       </div>
 
       <!-- Price History -->
-      <div class="container my-5" id="priceHistory">
-        <div class="card p-4">
-          <h2 class="mb-4">Price History</h2>
-          <canvas id="lineChart" height="300"></canvas>
+      <div
+        class="container my-5 py-5"
+        id="priceHistory"
+        style="min-height: 400px"
+      >
+        <div class="row mb-2 mb-md-5">
+          <div class="col-12">
+            <h2>Price History</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="card px-2 border-0">
+              <div style="height: 350px">
+                <canvas id="lineChart"></canvas>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- Price History Ends -->

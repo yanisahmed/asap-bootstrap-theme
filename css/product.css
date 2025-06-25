@@ -32,6 +32,14 @@ html {
   border-bottom: 3px solid #0d6efd;
   color: #0d6efd;
 }
+
+@media (max-width: 376px) {
+  .sticky-subnav .nav-link {
+    padding: 0;
+    font-size: 10px;
+    margin-top: 20px;
+  }
+}
 /******************************* OFFERS *********************************/
 .price-item {
   background: #fff;
@@ -79,6 +87,9 @@ html {
   color: #fff;
 }
 
+#priceHistory {
+  background: white;
+}
 /******************************* DESCRIPTION *********************************/
 
 .description-title {
